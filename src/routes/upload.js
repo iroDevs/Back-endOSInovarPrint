@@ -14,3 +14,5 @@ router.post("/",multer.single("file"),(req,res)=> {
         res.status(500).json({message: "erro algo deu erraod", error,})
     }
 })
+
+module.exports = router;
